@@ -1,0 +1,42 @@
+/*设置背景*/
+body{
+	background: #aaa;
+	font-size: 100%;
+}
+/*设置位置*/
+.main{
+	position: absolute;
+	left: 50%;top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+/*设置标题的样式*/
+header{
+	text-align: center;
+	background: orange;
+	padding: 0.7em;
+	font-size: 1.5em;
+	color: #fff;
+}
+/*设置按钮菜单样式*/
+button{
+	
+}
+/*设置小标题样式*/
+header:not(.title){
+	color: #fff;
+	text-align: center;
+	cursor: pointer;
+}
+header:not(.title):hover{
+	background: #ccc;
+}
+div{
+	width: 100%;height: 8em;
+	background: #888;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}

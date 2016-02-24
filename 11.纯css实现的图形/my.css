@@ -1,0 +1,92 @@
+body{
+	background: #cca;
+	font-size: 100%;
+	width: 80%;
+	margin: auto;
+}
+p{
+	font-size: 1.5em;
+	font-weight: bold;
+	text-align: center;
+}
+pre{
+	background: #555;
+	color: #fff;
+	padding: 0.5em;
+	line-height: 1.5;
+	border-radius: 1em;
+	font-weight: bold;
+	font-size: 1.2em;
+	overflow: auto;
+}
+div{
+	margin: auto;
+}
+#t1{
+	width: 0;height: 0;
+	border-width: 2em;
+	border-style: solid;
+	border-color: #000 #f00 #00f #fff;
+}
+#t2{
+	width: 0;height: 0;
+	border-width: 1em 2em 3em 4em;/*4em宽，6em长*/
+	border-style: solid;
+	border-color: #000 #f00 #00f #fff;
+}
+#t3{
+	width: 0;height: 0;
+	border-width: 1em;
+	border-style: solid;
+	border-color: #000 transparent;/*上下黑色，左右透明*/
+}
+#t4{
+	width: 0;height: 0;
+	border-width: 1em;
+	border-style: solid;
+	border-color: transparent #000;/*左右黑色，上下透明。*/
+}
+#t5{
+	width: 0;height: 0;
+	border-width: 1em;
+	border-style: solid;
+	border-color: #000 transparent transparent;/*上部黑色，下部透明，左右透明*/
+}
+#t6{
+	width: 0;height: 0;
+	border-width: 1em 2em;
+	border-style: solid;
+	border-color: #000 transparent transparent;
+}
+#t7{
+	width: 0;height: 0;
+	border-width: 1em;
+	border-style: solid;
+	border-color: #000 #000 transparent transparent;
+}
+#t8{
+	width: 0;height: 0;
+	border-width: 1em 2em;
+	border-style: solid;
+	border-color: #000 #000 transparent transparent;
+}
+#t9{
+	width: 1em;height: 0;
+	border-width: 1em;
+	border-style: solid;
+	border-color: #000 transparent transparent;
+}
+#t10{
+	width: 0;height: 0;
+	border-radius: 50%;/*通过圆角为半径（宽度一半）来实现圆形*/
+	border-width: 2em;
+	border-style: solid;
+	border-color: #000 #f00 #00f #fff;
+}
+#t11{
+	width: 0;height: 0;
+	border-radius: 50%;/*通过圆角为半径（宽度一半）来实现圆形*/
+	border-width: 1em 2em ;
+	border-style: solid;
+	border-color: #000 #f00 #00f #fff;
+}

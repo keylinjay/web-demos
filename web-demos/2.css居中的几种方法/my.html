@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>css居中的几种方法</title>
+	<link rel="stylesheet" href="my.css">
+</head>
+<body>
+	<div id="container">
+		<div class="parent" style="height:300px;background:#eee">
+		  <div id="test" class="child" style="width: 100px;height: 100px;background:#ee2;">DEMO</div>
+		</div>
+		<button onclick="color5()">蓝的反转色</button>
+		<button onclick="color4()">绿的反转色</button>
+		<button onclick="color3()">红的反转色</button>
+	</div>
+	<div class="clearfix">					
+		<h3>一:居中(水平垂直居中)之inline-block+text-align+table-cell+vertical-align</h3>
+		<p>-兼容性比较高</p>
+		<p><span>				</span></p>
+		<h3>二:居中之absolute+transform</h3>
+		<p>-child不会影响其他元素</p>
+		<p>-不兼容性低版本IE</p>
+		<p><span>				</span></p>
+		<h3>三:居中之flex+justify-content+align-items</h3>
+		<p>-只需要设置parent</p>
+		<p>-不兼容低版本IE</p>
+	</div>
+	<script src="my.js"></script>
+</body>
+</html>

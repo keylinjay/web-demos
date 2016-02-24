@@ -1,0 +1,29 @@
+body{
+	background: #dfd;
+	height: 100%;
+}
+.container{
+	border: 1px solid;
+	overflow: hidden;/*消除float引起的父元素高度坍塌的bug*/
+}
+.main-wrap{
+	float: left;
+	width: 100%;
+}
+.main{
+	/*float: left;*/
+	background: #eee;
+	margin: 0 200px;
+}
+.sub{
+	float: left;
+	background: #aaa;
+	margin-left: -100%;
+	width: 190px;
+}
+.extra{
+	float: left;
+	background: #aaa;
+	margin-left: -190px;
+	width: 190px;
+}

@@ -1,0 +1,50 @@
+body{
+	background: #cca;
+}
+li{
+	list-style: none;
+	margin: auto;
+}
+div{
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+pre{
+	background: #222;
+	color: #fee
+}
+.in{
+	background: #fff;
+	width: 8em;
+	/*position: absolute;*/
+	height: 0em;
+	overflow: hidden;
+	
+}
+.bn:hover span{
+	background: #eee;
+}
+.bn{
+	width: 3em;height: 3em;
+}
+.bn span{
+	border: 1px solid #f00;
+	display: block;
+	width: 100%;
+	line-height: 0.4em;
+	background: #000;
+	margin:0.1em auto;
+}
+.t span{
+	line-height: 3em;
+	display: inline-block;
+	background: #999;
+	width: 50%;
+}
+div.bn{
+	width: 2em;height: 2em;
+	background: #eef;
+	display: inline-block;
+	padding: 0.5em;
+}

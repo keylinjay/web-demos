@@ -1,5 +1,6 @@
 body{
 	background: #cca;
+	text-align: justify;
 }
 p{
 	width: 50%;
@@ -23,4 +24,8 @@ div{
 	display: block;
 	line-height: 3em;
 	background: #eee;
+}
+.dib{
+	display: inline-block;
+	width: 100px;height: 200px;
 }

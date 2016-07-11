@@ -2,9 +2,7 @@ function $ (name) {
 	var regid = /^#.+/,
 		regcls= /^\..+/,
 		regtag= /[a-zA-Z]+/;
-	
 	if (regid.test(name)) {
-
 		return document.getElementById(name.substring(1));
 	}else if(regcls.test(name)){
 		return document.getElementsByClassName(name.substring(1));

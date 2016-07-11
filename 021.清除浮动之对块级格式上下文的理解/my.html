@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>BFC块级格式上下文</title>
+	<link rel="stylesheet" href="my.css">
+</head>
+<body>
+<h1>1、清除浮动的几种方法</h1>
+<div class="container">
+	<div class="outer">w100;h100;</div>
+	<div class="wrap" id="wraper">
+		<div class="fl">
+			<p>float:left;<br>width:100px;<br>height:350px;</p>
+		</div>
+		<div class="fr">
+			<p>float:right;<br>width:100px;<br>height:350px;</p>
+		</div>
+		<div class="maincontent inner">
+			<p>width:100px;<br>height:100px;<br>margin-bottom:300px;</p>
+		</div>
+	</div>
+</div>
+<div class="sidebar" id="btns">
+	<button>noClear</button>
+	<button>clearFix1</button>
+	<button>clearFix2</button>
+	<button>clearFix3</button>
+	<button>clearFix4</button>
+	<button>clearFix5</button>
+	<p id="noClear">此时没有设置清除浮动</p>
+	<p id="clearFix1">
+		.clearFix1::after{
+		content:"";
+		display:block;
+		clear:both;}<br>
+		应用此clearFix似乎并不起作用？<br>
+		此时，浮动元素的底边正好处于最后一个非浮动元素的边界和外边距边界的中间。
+		原因未知。
+	</p>
+	<p id="clearFix2">
+		.clearFix2::after{content:"";
+		display:table;
+		clear:both;}<br>
+		可以清除浮动
+	</p>
+	<p id="clearFix3">
+		.clearFix3{overflow:hidden;}<br>wraper的BFC化。虽然清除浮动，但是上部的外边距不叠加了。
+	</p>
+	<p id="clearFix4">
+		.clearFix4::after{
+			content:".";
+			display:block;
+			clear:both;
+			height: 0;
+			visibility: hidden;
+		}<br>
+		可以正常清除浮动。
+	</p>
+	<p id="clearFix5">
+		.clearFix5::after,
+		.clearFix5::before{
+			content:"";
+			display:block;
+		}
+		.clearFix5::after{
+			clear: both;
+		}<br>
+		不能清除浮动。<br>
+		此时，浮动元素的底边正好处于最后一个非浮动元素的边界和外边距边界的中间。
+		原因未知。
+	</p>
+</div>
+<script src="my.js"></script>
+</body>
+</html>

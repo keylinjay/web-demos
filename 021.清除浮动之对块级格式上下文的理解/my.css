@@ -1,0 +1,77 @@
+body{
+	background: #aca;
+}
+.container{
+	margin-left: 400px;
+	width: 600px;
+	height: 600px;
+	background: #000;
+	color: #ff0;
+	float: left;
+}
+.wrap{
+	background: #aaa;
+
+}
+.fl{
+	float: left;
+	width: 100px;
+	height: 350px;
+	background: #333;
+}
+.fr{
+	float: right;
+	width: 100px;
+	height: 350px;
+	background: #333;
+}
+.inner{
+	width: 100px;
+	height: 100px;
+	background: #999;
+}
+.maincontent{
+	margin: 50px auto 300px auto;
+}
+.outer{
+	width: 100px;
+	height: 100px;
+	margin: 0px auto;
+	background: #666;
+}
+.sidebar{
+	margin-left: -900px;
+	float: left;
+	width: 290px;
+}
+.sidebar button{
+	width: 5em;
+	margin-left: 5px;
+}
+.clearFix1::after{
+	content:"";
+	display:block;
+	clear:both;
+}
+.clearFix2::after{
+	content:"";
+	display:table;
+	clear:both;
+}
+.clearFix3{
+	overflow: hidden;
+}
+.clearFix4::after{
+	content:".";
+	display:block;
+	clear:both;
+	height: 0;
+	visibility: hidden;
+}
+.clearFix5::after,.clearFix5::before{
+	content:"";
+	display:block;
+}
+.clearFix5::after{
+	clear: both;
+}

@@ -1,0 +1,28 @@
+body{
+	/*margin: 0;*/
+	background: #aca;
+}
+.album .container{
+	position: relative;
+	border: 1px solid;
+	text-align: center;
+	width: 1280px;
+	height: 720px;
+	background: no-repeat 0 20%/1280px auto;
+	background-image: url("IMG_0573.JPG");
+}
+.album .container .over{
+	height: 720px;
+	background: rgba(128,128,128,0.3);
+}
+.album .container .img{
+	display: inline-block;
+	/*box-sizing: border-box;*/
+	margin-top: 20px;
+	width: 500px;
+	height: 650px;
+	background: no-repeat -30px -30px/550px auto;
+	background-image: url("IMG_0573.JPG");
+	border: 20px solid rgba(96,96,128,0.05);
+	border-radius: 20px;
+}

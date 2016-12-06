@@ -1,0 +1,37 @@
+/*CSS源代码*/
+body{
+	background:#CFCFCF;
+}
+
+/* 一:居中(水平垂直居中)之inline-block+text-align+table-cell+vertical-align */
+/* 优点:兼容性比较高,对于低版本HTML结构采用table结构即可 */
+/* .parent{
+  text-align:center;
+  display:table-cell;
+  vertical-align:middle;
+}
+.child{
+  diaplay:inline-block;
+} 
+
+/* 二:absolute+transform */
+/* 优点:子元素不会干扰其他元素
+缺点：兼容性较差 */
+/* .parent{
+  position:relative;
+}
+.child{
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform:translate(-50% -50%);
+} */
+
+/* 三:flex+justify-content+align-items */
+/* 优点:万金油- -;
+缺点:兼容性不太好 */
+.parent{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}

@@ -1,0 +1,61 @@
+#allcard{
+    width:400px;
+    height:400px;
+    margin:150px auto 50px;
+     
+    perspective:800px;
+    perspective-origin:50% 50%;
+    transform-style:preserve-3d;
+     
+    -webkit-perspective:800px;
+    -webkit-perspective-origin:50% 50%;
+    -webkit-transform-style:preserve-3d;
+     
+    position:relative;
+    overflow:hidden;
+    }
+.card{
+    width:360px;
+    height:360px;
+    padding:20px;
+    background:#000;
+    position:absolute;
+    font-size:360px;
+    color:#FFF;
+    text-align:center;
+    line-height:360px;
+    }
+     
+#op{
+    width:260px;
+    margin:0 auto;
+    }
+.bott{
+    width:120px;
+    height:50px;
+    margin-right:10px;
+    background:#000;
+    color:#FFF;
+    text-align:center;
+    line-height:50px;
+    cursor:pointer;
+    float:left;
+    }
+#card1{
+    transform:rotateX(0deg);
+    transform-origin:bottom;
+    -moz-transition:transform 1s linear;
+     
+    -webkit-transform:rotateX(0deg);
+    -webkit-transform-origin:bottom;
+    -webkit-transition:transform 1s linear;
+    }
+#card2,#card3,#card4,#card5,#card6{
+    transform:rotateX(90deg);
+    transform-origin:bottom;
+    -moz-transition:transform 1s linear;
+     
+    -webkit-transform:rotateX(90deg);
+    -webkit-transform-origin:bottom;
+    -webkit-transition:transform 1s linear;
+    }

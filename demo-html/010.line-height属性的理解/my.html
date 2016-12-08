@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>line-height的深入理解</title>
+	<link rel="stylesheet" href="my.css">
+</head>
+<body>
+	<div class="t1">
+		<p>font-size:20px;line-height:1px;</p>
+	</div>
+	<div class="t2">
+		<p>font-size:1px;line-height:20px;</p>
+	</div>
+	<div class="t3">
+		<p>高度不固定的box内垂直居中，我的css为<em>padding-top和padding-bottom</em>的值为一样的<br/>我是第二行</p>
+	</div>
+	<div class="t4">
+		<p>
+			<span>高度固定的box，本例高度为200px，我的css设置为line-height:200px;是不行的，你会看到我的下一行出去了，应为行间距太大<br/>我是下一行</span>
+		</p>
+	</div>
+	<hr>
+	<div class="t5">
+		<p>
+			<span>高度固定的box，本例高度为200px，我的css设置为line-height:1.5;并且我设置了display:inline-block;vertical-align:middle;<br/>我是下一行</span>
+		</p>
+	</div>
+</body>
+</html>

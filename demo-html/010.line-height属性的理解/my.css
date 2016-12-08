@@ -1,0 +1,43 @@
+body{
+	background: #cca;
+}
+div{
+	background: #ddd;
+}
+.t1 p{
+	font-size: 20px;
+	line-height: 1px;
+}
+.t2 p{
+	font-size: 1px;
+	line-height: 20px;
+}
+.t3 p{
+	padding: 10px 0;
+}
+.t4{
+	height: 200px;
+	/*line-height: 200px;*/
+}
+/*.t4 p{
+	line-height: 200px;
+}*/
+.t4 p span{
+	/*display: inline-block;*/
+	line-height: 200px;
+	vertical-align: middle;
+	border: 1px solid;
+	background: #ccc;
+}
+.t5{
+	height: 200px;
+	line-height: 200px;
+}
+/*.t4 p{
+	line-height: 200px;
+}*/
+.t5 p span{
+	display: inline-block;
+	line-height: 1.5;
+	vertical-align: middle;
+}

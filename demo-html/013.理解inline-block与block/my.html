@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>inline-block与block</title>
+	<link rel="stylesheet" href="my.css">
+</head>
+<body>
+	<p>下面所有的span都设置了line-height的值为3em。可以看出在默认inline的属性下，即使是没有内容的span都会启用line-height生效。而inline-block和block则不会生效。</p>
+	<div class="t0">
+		<p id = "t01">我是p标签的block元素。<span>我是span，所有的span都设置了默认的inline属性。</span><br>这是一个空内容的span。<span></span><br>这是一个有一个空格符\&nbsp的span。<span>&nbsp;</span></p>
+		<p id = "t02">我是p标签的block元素。<span>我是span，我设置了inline-block</span><br>这是一个空内容的span。<span></span><br>这是一个有一个空格符\&nbsp的span。<span>&nbsp;</span></p>
+		<p id = "t03">我是p标签的block元素<span>我是span，我设置了block</span><br>这是一个空内容的span。<span></span><br>这是一个有一个空格符\&nbsp的span。<span>&nbsp;</span></p>
+	</div>
+	<div class="dib"></div>
+	<div class="dib"></div>
+	<div class="dib"></div>
+	<div class="dib"></div>
+	<div class="dib"></div>
+	<div class="dib"></div>
+	<div class="dib"></div>
+	<div class="dib"></div>
+	<script src="my.js"></script>
+</body>
+</html>

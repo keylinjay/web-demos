@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>纯css实现的图形</title>
+	<link rel="stylesheet" href="my.css">
+</head>
+<body scroll = "no">
+	<div id="t1"></div>
+	<p>正方形<br/>(下面多数是由他的1部分或2部分组成的）</p>
+	<pre>
+	width: 0;height: 0;
+	border-width: 1em;
+	border-style: solid;
+	border-color: #000 #f00 #00f #fff;
+	</pre>
+	<div id="t2"></div>
+	<p>长方形<br/>(下面多数是由他的1部分或2部分组成的）</p>
+	<pre>
+	width: 0;height: 0;
+	border-width: 1em 2em 3em 4em;/*4em宽，6em长*/
+	border-style: solid;
+	border-color: #000 #f00 #00f #fff;
+	</pre>
+	<div id="t3"></div>
+	<p>上下三角形</p>
+	<pre>
+	width: 0;height: 0;
+	border-width: 1em;
+	border-style: solid;
+	border-color: #000 transparent;/*上下黑色，左右透明*/
+	</pre>
+	<div id="t4"></div>
+	<p>左右三角形</p>
+	<pre>
+	width: 0;height: 0;
+	border-width: 1em;
+	border-style: solid;
+	border-color: transparent #000;/*左右黑色，上下透明。*/
+	</pre>
+	<div id="t5"></div>
+	<p>等腰直角三角形</p>
+	<pre>
+	width: 0;height: 0;
+	border-width: 1em;
+	border-style: solid;
+	border-color: #000 transparent transparent;/*上部黑色，下部透明，左右透明*/
+	</pre>
+	<div id="t6"></div>
+	<p>等腰三角形</p>
+	<pre>
+	width: 0;height: 0;
+	border-width: 1em 2em;
+	border-style: solid;
+	border-color: #000 transparent transparent;
+	</pre>
+	<div id="t7"></div>
+	<p>直角三角形</p>
+	<pre>
+	width: 0;height: 0;
+	border-width: 1em;
+	border-style: solid;
+	border-color: #000 #000 transparent transparent;
+	</pre>
+	<div id="t8"></div>
+	<p>直角三角形</p>
+	<pre>
+	width: 0;height: 0;
+	border-width: 1em 2em;
+	border-style: solid;
+	border-color: #000 #000 transparent transparent;
+	</pre>
+	<div id="t9"></div>
+	<p>梯形</p>
+	<pre>
+	width: 1em;height: 0;
+	border-width: 1em;
+	border-style: solid;
+	border-color: #000 transparent transparent;
+	</pre>
+	<div id="t10"></div>
+	<p>圆形<br/>(下面多数是由他的1部分或2部分组成的）</p>
+	<pre>
+	width: 0;height: 0;
+	border-radius: 50%;/*通过圆角为半径（宽度一半）来实现圆形*/
+	border-width: 2em;
+	border-style: solid;
+	border-color: #000 #f00 #00f #fff;
+	</pre>
+	<div id="t11"></div>
+	<p><br/>(下面多数是由他的1部分或2部分组成的）</p>
+	<pre></pre>
+	<div id="t12"></div>
+	<p></p>
+	<pre></pre>
+	<div id="t13"></div>
+	<p></p>
+	<pre></pre>
+	<div id="t14"></div>
+	<p></p>
+	<pre></pre>
+	<div id="t15"></div>
+	<p></p>
+	<pre></pre>
+	<script src="my.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+/*body,dl,dd,h1,h2,h3,h4,h5,h6,p,form{margin: 0;}*/
+/*ol,ul{margin: 0;padding: 0;}*/
+[data-ctrl-name=scrollview][data-direction=vertical] {
+	-webkit-box-orient:vertical;
+	-webkit-box-direction: normal;
+	box-direction: normal;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+}
+[data-ctrl-name=scrollview]{
+	width: 100%;
+	height: 100%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}

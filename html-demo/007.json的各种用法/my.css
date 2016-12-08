@@ -1,0 +1,9 @@
+body{
+	background: #ccc;
+}
+#yahoo{
+	-webkit-box-shadow: 2px 2px 2px #222;
+	box-shadow: 2px 2px 2px #222;
+	background: #fff;
+	width: 400px;height: 400px;
+}

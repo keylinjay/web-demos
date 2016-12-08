@@ -1,0 +1,41 @@
+body{
+	color: blue;
+	font: 16px "Comic Sans MS", cursive;
+}
+strong{
+	color: red;
+	font:200% serif;
+	/*font-size: 200%;font-family: serif;*/
+	background-color: #ddf;
+}
+.carrot{
+	color: orange;
+}
+.spinach{
+	color: green;
+}
+#first{
+	font-style: italic;
+}
+#test1,#test2{
+	width: 400px;height: 400px;
+	border: 1px solid;
+	overflow: scroll;
+}
+#test2{
+	padding: 10px;
+}
+#test1{
+	position: absolute;
+}
+#in1{
+	margin-top: 500px;
+	width: 100px;height: 100px;
+	background: #000;
+}
+#in0{
+	width: 100px;height: 100px;
+	position: absolute;
+	left: 0;top: 0;
+	background: #000;
+}

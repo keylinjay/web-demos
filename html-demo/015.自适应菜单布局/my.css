@@ -1,0 +1,25 @@
+#nav{
+	/*display: none;*/
+	/*height: 20px;*/
+}
+#toggle{
+	display: none;
+
+}
+#menu{
+	/*display: none;*/
+	/*width: 20em;*/
+}
+#menu li{
+	display: inline-block;
+}
+
+
+@media screen and (max-width: 1200px){
+	#toggle{display: block;}
+	#menu{
+		display: none;
+		position: absolute;
+		width: 10em;
+	}
+}

@@ -36,7 +36,8 @@
 		clear:both;}<br>
 		应用此clearFix似乎并不起作用？<br>
 		此时，浮动元素的底边正好处于最后一个非浮动元素的边界和外边距边界的中间。
-		原因未知。
+		原因：空的after元素无法撑开父元素。
+		clear:both只有两侧有浮动元素时才能清除浮动。此时after元素在浮动元素下方，两侧不与浮动元素相接。故而无效。
 	</p>
 	<p id="clearFix2">
 		.clearFix2::after{content:"";
@@ -56,6 +57,7 @@
 			visibility: hidden;
 		}<br>
 		可以正常清除浮动。
+		含有内容的after元素是会撑开父元素的。
 	</p>
 	<p id="clearFix5">
 		.clearFix5::after,
@@ -68,7 +70,8 @@
 		}<br>
 		不能清除浮动。<br>
 		此时，浮动元素的底边正好处于最后一个非浮动元素的边界和外边距边界的中间。
-		原因未知。
+		原因：空的after元素无法撑开父元素。
+		clear:both只有两侧有浮动元素时才能清除浮动。此时after元素在浮动元素下方，两侧不与浮动元素相接。故而无效。
 	</p>
 </div>
 <script src="my.js"></script>

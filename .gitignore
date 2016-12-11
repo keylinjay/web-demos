@@ -1,4 +1,4 @@
 #linux shellscript
 *.sh
 #widows powershell
-*.p1
+*.ps1
